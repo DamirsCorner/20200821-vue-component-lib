@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.10",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "vue-component": "file:../vue-component-0.1.0.tgz"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^1.0.3",

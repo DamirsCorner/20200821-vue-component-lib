@@ -20,8 +20,9 @@
           rel="noopener noreferrer"
           class="button--grey"
         >
-          GitHub
+          GitHub 1
         </a>
+        <Button text="Click me!"></Button>
       </div>
     </div>
   </div>
@@ -29,8 +30,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Component from 'vue-class-component'
+import { Button } from 'vue-component'
 
-export default Vue.extend({})
+@Component({
+  components: { Button },
+})
+export default class VuePage extends Vue {}
 </script>
 
 <style>
@@ -44,16 +50,8 @@ export default Vue.extend({})
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
