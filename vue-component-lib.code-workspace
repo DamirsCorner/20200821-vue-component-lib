@@ -1,7 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "vue-component"
-		}
-	]
+  "folders": [
+    {
+      "path": "vue-component"
+    },
+    {
+      "path": "nuxt-client"
+    }
+  ]
 }
