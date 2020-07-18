@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['node_modules/vue-component/dist/vue-component.css'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
