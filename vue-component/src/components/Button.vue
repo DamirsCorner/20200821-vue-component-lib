@@ -1,5 +1,5 @@
 <template>
-  <button type="button" @click="click()">
+  <button class="button" type="button" @click="click()">
     <slot>{{ text }}</slot>
   </button>
 </template>
@@ -16,3 +16,9 @@ export default class Button extends Vue {
   }
 }
 </script>
+
+<style scoped>
+.button {
+  border-color: black;
+}
+</style>
