@@ -5,9 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib src/index.ts && npm pack && shx mv ./vue-component-0.1.0.tgz ..",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*"
+  ],
+  "main": "./dist/vue-component.umd.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
@@ -32,6 +37,7 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "shx": "^0.3.2",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   }
