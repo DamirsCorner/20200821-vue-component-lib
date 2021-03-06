@@ -23,20 +23,20 @@
           GitHub 1
         </a>
         <Button text="Click me!"></Button>
+        <div>{{ mixData }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
-import { Button } from 'vue-component'
+import { Component, Mixins } from 'vue-property-decorator'
+import { Button, TestMixin } from 'vue-component'
 
 @Component({
   components: { Button },
 })
-export default class VuePage extends Vue {}
+export default class VuePage extends Mixins(TestMixin) {}
 </script>
 
 <style>
